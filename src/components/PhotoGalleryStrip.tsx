@@ -84,9 +84,6 @@ export const PhotoGalleryStrip: React.FC = () => {
           />
           <FadeUp delay={60} once={false}>
             <div className="w-10 h-0.5 bg-[#293549] mx-auto mt-2.5 mb-2 rounded-full" />
-            <p className="text-xs sm:text-sm text-stone-600 mt-1">
-              Authentic glimpses of our Malabar Hill practice and patient smiles.
-            </p>
           </FadeUp>
         </div>
 

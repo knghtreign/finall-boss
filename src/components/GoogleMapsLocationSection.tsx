@@ -33,15 +33,16 @@ export const GoogleMapsLocationSection: React.FC = () => {
               </div>
             </ScrollReveal>
 
-            <TextReveal
-              text="Visit Our Clinic in Malabar Hill"
-              as="h2"
-              className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1E252B] leading-tight"
-              highlightWords={['Our', 'Clinic']}
-              highlightClass="text-[#293549]"
-              delay={40}
-              once={false}
-            />
+            <ScrollReveal animation="fade-up" delay={40} once={false}>
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1E252B] leading-tight">
+                <span className="block sm:inline">
+                  Visit <span className="text-[#293549]">Our Clinic</span>
+                </span>{' '}
+                <span className="block sm:inline">
+                  in Malabar Hill
+                </span>
+              </h2>
+            </ScrollReveal>
           </div>
 
           {/* Right side: Address text and contact pill buttons */}

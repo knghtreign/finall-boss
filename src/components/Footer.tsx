@@ -25,17 +25,12 @@ export const Footer: React.FC<FooterProps> = ({
           <StaggerItem distance={18}>
             <div className="space-y-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-stone-800 border border-stone-700 flex items-center justify-center p-1.5">
-                  <svg
-                    className="w-full h-full text-sky-400"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.75"
-                  >
-                    <path d="M12 2C8.5 2 6 4 6 7c0 3 1.5 5 2 8 0.5 3 1.5 7 4 7s3.5-4 4-7c0.5-3 2-5 2-8 0-3-2.5-5-6-5z" />
-                    <path d="M9 12c1 1.5 2 2 3 2s2-0.5 3-2" />
-                  </svg>
+                <div className="w-9 h-9 rounded-xl bg-white border border-stone-600 flex items-center justify-center p-1 overflow-hidden shadow-xs">
+                  <img
+                    src="/assets/aistudio/image_15ca881b.png"
+                    alt="Dr. Deepal's Dental Clinic Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <span className="font-serif-clinic text-lg font-bold text-white block leading-tight">

@@ -1,12 +1,10 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Sparkles, MoveHorizontal } from 'lucide-react';
+import { MoveHorizontal } from 'lucide-react';
 import {
   ScrollReveal,
   TextReveal,
-  FadeUp,
   ScaleIn,
 } from './ScrollReveal';
-import { motion } from 'motion/react';
 
 interface SmileTransformationSliderProps {
   onOpenBooking: () => void;
@@ -53,33 +51,19 @@ export const SmileTransformationSlider: React.FC<SmileTransformationSliderProps>
     <section id="transformation" className="py-8 sm:py-12 bg-[#F7F4E9] border-t border-[#E6DFD1]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-xl mx-auto mb-6">
-          <ScrollReveal animation="slide-down" delay={30} once={false}>
-            <span className="text-[11px] font-bold tracking-widest text-[#293549] uppercase">
-              Interactive Visualizer
-            </span>
-          </ScrollReveal>
+          <TextReveal
+            text="Real Smile Transformations"
+            as="h2"
+            className="font-serif-clinic text-3xl sm:text-4xl font-bold text-[#1C221D]"
+            highlightWords={['Smile']}
+            highlightClass="text-[#293549]"
+            delay={40}
+            once={false}
+          />
 
-          <div className="mt-1">
-            <TextReveal
-              text="Real Smile Transformations"
-              as="h2"
-              className="font-serif-clinic text-3xl sm:text-4xl font-bold text-[#1C221D]"
-              highlightWords={['Smile']}
-              highlightClass="text-[#293549]"
-              delay={60}
-              once={false}
-            />
-          </div>
-
-          <ScrollReveal animation="scale-up" delay={80} once={false}>
+          <ScrollReveal animation="scale-up" delay={60} once={false}>
             <div className="w-10 h-0.5 bg-[#293549] mx-auto mt-2.5 mb-2 rounded-full" />
           </ScrollReveal>
-
-          <FadeUp delay={100} once={false}>
-            <p className="text-xs sm:text-sm text-stone-600">
-              Slide horizontally to see the result of Dr. Shah's clear aligners.
-            </p>
-          </FadeUp>
         </div>
 
         {/* Interactive Before / After Comparison Slider Container with NO cropping & glitch-free pointer capture */}
@@ -137,28 +121,6 @@ export const SmileTransformationSlider: React.FC<SmileTransformationSliderProps>
               <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 w-9 h-9 rounded-full bg-white text-[#293549] border-2 border-[#293549] shadow-xl flex items-center justify-center pointer-events-none transition-transform group-hover:scale-105">
                 <MoveHorizontal className="w-4 h-4" />
               </div>
-            </div>
-          </div>
-
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-stone-600 px-2">
-            <span className="flex items-center gap-1.5 font-medium text-stone-700">
-              <span className="w-2 h-2 rounded-full bg-[#293549] animate-pulse" />
-              Average Treatment: 6 – 9 Months
-            </span>
-            <div className="flex items-center gap-3">
-              <button
-                onClick={onOpenSmileSimulator}
-                className="text-[#293549] font-semibold hover:underline flex items-center gap-1 cursor-pointer transition-colors hover:text-[#1c241e]"
-              >
-                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-                <span>Simulate Your Smile</span>
-              </button>
-              <button
-                onClick={onOpenBooking}
-                className="px-4 py-2 bg-[#293549] hover:bg-[#1E2838] hover:-translate-y-0.5 active:translate-y-0 text-white rounded-full font-semibold transition-all cursor-pointer shadow-xs hover:shadow-md"
-              >
-                Book Your Scan
-              </button>
             </div>
           </div>
         </ScaleIn>

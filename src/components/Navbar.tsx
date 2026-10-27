@@ -126,19 +126,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Main Navbar */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo with curved boundary */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-[#EAE3D4] border border-[#D5CCBA] flex items-center justify-center p-1.5 shadow-2xs group-hover:border-[#293549] group-hover:scale-105 transition-all">
-              <svg
-                className="w-full h-full text-[#293549]"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.75"
-              >
-                <path d="M12 2C8.5 2 6 4 6 7c0 3 1.5 5 2 8 0.5 3 1.5 7 4 7s3.5-4 4-7c0.5-3 2-5 2-8 0-3-2.5-5-6-5z" />
-                <path d="M9 12c1 1.5 2 2 3 2s2-0.5 3-2" />
-              </svg>
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border-2 border-[#D5CCBA] p-1.5 shadow-xs flex items-center justify-center overflow-hidden group-hover:border-[#293549] group-hover:scale-105 group-hover:shadow-md transition-all">
+              <img
+                src="/assets/aistudio/image_15ca881b.png"
+                alt="Dr. Deepal's Dental Clinic Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-serif-clinic text-lg sm:text-xl font-bold tracking-tight text-[#1A1E1A] leading-none">

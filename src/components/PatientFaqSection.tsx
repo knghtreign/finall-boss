@@ -41,7 +41,7 @@ export const PatientFaqSection: React.FC = () => {
 
           <FadeUp delay={60} once={false}>
             <p className="text-sm sm:text-base text-stone-600 mt-2 font-medium">
-              Everything you need to know about scheduling, pricing, and procedures at Malabar Hill.
+              Everything you need to know about scheduling, pricing, and procedures before visiting.
             </p>
           </FadeUp>
         </div>

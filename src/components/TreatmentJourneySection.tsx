@@ -79,12 +79,6 @@ export const TreatmentJourneySection: React.FC<TreatmentJourneyProps> = ({
             delay={50}
             once={false}
           />
-
-          <FadeUp delay={80} once={false}>
-            <p className="text-xs sm:text-sm text-stone-600 mt-2 font-normal">
-              A clear, comfortable 4-step sequence designed for peace of mind.
-            </p>
-          </FadeUp>
         </div>
 
         {/* 4 Step Navigation Tabs with StaggerContainer */}

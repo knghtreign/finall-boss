@@ -83,12 +83,6 @@ export const BookVisitSection: React.FC = () => {
               once={false}
             />
 
-            <FadeUp delay={60} once={false}>
-              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Experience gentle, unhurried dentistry. Confirm instantly over WhatsApp or reserve a call back with our reception team.
-              </p>
-            </FadeUp>
-
             <StaggerContainer
               staggerDelay={0.06}
               delayChildren={0.08}
