@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Dr. Deepal\u0027s Dental Clinic",
+  "description": "Discover a simpler, smarter way to your perfect smile with Dr. Deepal Shah. Comprehensive dental care, clear aligners, painless procedures, and personal care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

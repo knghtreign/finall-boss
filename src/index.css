@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1c241e;
+    background-color: #F7F4E9;
+    letter-spacing: -0.01em;
+    font-size: 16.5px;
+    overflow-x: clip;
+  }
+  body {
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-serif-clinic {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+/* Hide scrollbar for clean carousels while keeping smooth scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Fluid Apple & Webflow standard transition curves */
+.hover-lift {
+  transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+.hover-lift:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* Subtle, refined interactive card hover (replaces harsh bouncy keyframes) */
+.bouncy-hover {
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.bouncy-hover:hover {
+  transform: translateY(-3px) scale(1.015);
+}
+.bouncy-hover:active {
+  transform: translateY(0px) scale(0.985);
+}
+
+/* Smooth group hover */
+.wavy-group > * {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.wavy-group:hover > * {
+  transform: translateY(-2px);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f2eee3;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfc6b5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ad9f8a;
+}
